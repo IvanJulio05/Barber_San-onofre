@@ -1,0 +1,81 @@
+body{
+    background-color: #151515;
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina relleno predeterminado */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    overflow: hidden;
+}
+
+.conteiner_general{
+    display: flex;    
+    align-items: center;
+    flex-direction: column;   
+    
+}
+
+.conteiner_logo{    
+    width: 300px;
+}
+
+.conteiner_general img{
+    width: 100%;
+    height: auto;
+}
+.conteiner_inputs{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.conteiner_inputs input{
+    width: 60%;
+    max-width: 400px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+}
+
+.conteiner_inputs input:focus{
+    outline: none;
+    border: 1px solid #FEC408;
+}
+.conteiner_inputs button{
+    width: 40%;
+    max-width: 300px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #FEC408;
+    color: #151515;
+    font-weight: bold;
+}
+
+.conteiner_inputs button:hover{
+    cursor: pointer;
+}
+
+
+.conteiner_general a{
+    text-decoration: none;
+    margin: 5px;
+    color: white;
+}
+.conteiner_general a:hover{
+    color: #FEC408;
+}
+.conteiner_general p{
+    text-decoration: none;
+    margin: 5px;
+    color: white;
+}
+.conteiner_general p:hover{
+    color: #FEC408;
+    cursor: pointer;
+}

@@ -1,0 +1,151 @@
+body{
+    background-color: #151515;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header{
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, #151515 100%), /* Degradado */
+        url(/img/banner.png); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Incrementa aún más la altura para mostrar más de la imagen */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+.conteiner_barbers{
+    display: flex;  
+    flex-direction: column;  
+}
+.barber{
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;    
+    max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    overflow: hidden; /* Oculta cualquier contenido que desborde */
+}
+
+.conteiner_img{
+    width: 50px;   
+    
+}
+.conteiner_img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.conteiner_info{
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 100%;
+}
+
+.conteiner_info h2{
+    font-size: 17px;
+    font-weight: lighter;
+    margin: 0;
+}
+.conteiner_info p{
+    
+    font-size: 16px;
+    margin: 0;
+    color: #838383;
+}
+
+.buttons button{
+    background-color: #FEC408;
+    color: #151515;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.conteiner_logo{    
+    width: 100px;
+}
+.conteiner_logo img{
+    width: 100%;
+    height: auto;
+}
+
+.conteiner_search_bar input{
+    width: 100%;
+    max-width: 200px;
+    height: 30px;
+    margin: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.conteiner_search_bar input:focus{
+    outline: none;
+    border: 1px solid #FEC408;
+}
+.conteiner_search_bar button{
+    width: 40%;
+    max-width: 60px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #FEC408;
+    color: #151515;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.conteiner_menu nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.conteiner_menu nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.conteiner_menu nav a{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 16px;
+}
+.conteiner_menu nav a:hover{
+    color: #FEC408;
+}
