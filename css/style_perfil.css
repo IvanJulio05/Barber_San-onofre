@@ -1,0 +1,97 @@
+body{    
+    background-color: #151515;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;    
+}
+header{
+    width: 100%;
+    background-image: url(../img/estampado.png);
+    background-size: 200px; /* Ajusta el tamaño de la imagen de fondo */
+    background-repeat: repeat; /* Repite la imagen si es necesario */
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 0px 0px;
+    align-items: center;
+    background-color: #FEC408;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1{
+    background-color: #151515;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: lighter;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.conteiner_img{
+    width: 120px;   
+    margin: 0;
+    
+}
+.conteiner_img img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+main{
+    margin-top: 0px;
+}
+.conteiner_status_score{
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    color: black;
+    justify-content: center;
+}
+
+.conteiner_status_score h2{
+    font-size: 16px;
+    color: #5b5b5b;
+    font-weight: lighter;
+}
+
+.line{
+    width: 1px;
+    height: 80%;
+    min-height: 80px;
+    background-color: #5b5b5b;
+    margin: 0 20px;
+    align-self: center;
+}
+.score{
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.status{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.score p{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+.status p{
+    font-size: 16px;
+    color: rgb(1, 255, 1);
+    font-weight: bold;
+    
+}
