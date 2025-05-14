@@ -12,7 +12,7 @@ body{
 header{
     background-image: 
         linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, #151515 100%), /* Degradado */
-        url(/img/banner.png); /* Imagen de fondo */
+        url(../img/banner.png); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
     height: 500px; /* Incrementa aún más la altura para mostrar más de la imagen */
