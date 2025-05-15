@@ -138,6 +138,7 @@ main{
 
 .conteiner_list_clients{
     margin: 10px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,25 +148,27 @@ main{
 
 .conteiner_list_clients ul{
     display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los li horizontalmente */
+    justify-content: center;
     margin: 8px 0;
     width: 100%;
     max-width: 100%;
-    flex-direction: column;
     list-style: none;
-
-    align-items: center;
-    justify-content: center;
     box-sizing: border-box;
     overflow-x: auto;
+    
 }
 .conteiner_list_clients ul li{
     color: white;
     padding: 10px;
-    margin: 5px;
+    margin: 5px 0;
     display: flex;
     align-items: center;
-    justify-content: center; /* Centra horizontalmente el contenido */
+    justify-content: center; /* Centra el contenido dentro del li */
     border-bottom: 1px solid rgb(145, 145, 145);
-    width: 100%; /* Ocupa todo el espacio horizontal del ul */
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    min-width: 200px;
+    width: fit-content; /* Ajusta el ancho al contenido */
+    
+    box-sizing: border-box;
 }
