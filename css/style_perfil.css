@@ -36,13 +36,13 @@ header h1{
 }
 
 .conteiner_img{
-    width: 120px;   
+    width: 100px;   
     margin: 0;
     
 }
 .conteiner_img img{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50px;
     object-fit: cover;
 }
@@ -58,15 +58,16 @@ main{
 }
 
 .conteiner_status_score h2{
-    font-size: 16px;
-    color: #5b5b5b;
+    font-size: 17px;
+    color: #a4a4a4;
+    margin-bottom: 0px;
     font-weight: lighter;
 }
 
 .line{
     width: 1px;
-    height: 80%;
-    min-height: 80px;
+    height: 50%;
+    min-height: 50px;
     background-color: #5b5b5b;
     margin: 0 20px;
     align-self: center;
@@ -84,9 +85,21 @@ main{
     align-items: center;
     justify-content: center;
 }
+.price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .score p{
     font-size: 16px;
-    color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.price p{
+    font-size: 16px;
+    color: white;
     font-weight: bold;
 }
 .status p{
@@ -94,4 +107,31 @@ main{
     color: rgb(1, 255, 1);
     font-weight: bold;
     
+}
+
+.conteiner_clients{
+    margin-top: 20px;
+    display: flex;    
+    justify-content: space-around;
+}
+
+.conteiner_clients h3{        
+    font-size: 17px;
+    color: #a4a4a4;
+    margin-bottom: 0px;
+    font-weight: lighter;
+}
+.conteiner_clients span{
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+}
+.conteiner_clients button{
+    background-color: #FEC408;
+    color: #151515;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
 }
