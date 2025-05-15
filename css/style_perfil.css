@@ -135,3 +135,37 @@ main{
     font-size: 15px;
     cursor: pointer;
 }
+
+.conteiner_list_clients{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.conteiner_list_clients ul{
+    display: flex;
+    margin: 8px 0;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    list-style: none;
+
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+.conteiner_list_clients ul li{
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    border-bottom: 1px solid rgb(145, 145, 145);
+    width: 100%; /* Ocupa todo el espacio horizontal del ul */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
