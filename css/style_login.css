@@ -4,7 +4,6 @@ body{
     padding: 0; /* Elimina relleno predeterminado */
     display: flex;
     justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
     min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
     overflow: hidden;
 }
@@ -54,7 +53,7 @@ body{
     border: none;
     background-color: #FEC408;
     color: #151515;
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 .conteiner_inputs button:hover{
