@@ -50,7 +50,7 @@ main{
     margin-top: 0px;
 }
 .conteiner_status_score{
-    margin-top: 0px;
+    margin-top: 15px;
     display: flex;
     align-items: center;
     color: black;
@@ -146,29 +146,46 @@ main{
     margin-top: 20px;
 }
 
-.conteiner_list_clients ul{
+.conteiner_list_clients ul {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los li horizontalmente */
+    align-items: center;
     justify-content: center;
     margin: 8px 0;
     width: 100%;
-    max-width: 100%;
+    max-width: 500px;
     list-style: none;
     box-sizing: border-box;
-    overflow-x: auto;
-    
+    padding: 0;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
 }
-.conteiner_list_clients ul li{
+
+.conteiner_list_clients ul li {
     color: white;
-    padding: 10px;
-    margin: 5px 0;
+    padding: 16px 24px;
+    margin: 8px 0;
     display: flex;
     align-items: center;
-    justify-content: center; /* Centra el contenido dentro del li */
-    border-bottom: 1px solid rgb(145, 145, 145);
-    min-width: 200px;
-    width: fit-content; /* Ajusta el ancho al contenido */
-    
+    justify-content: center; /* Cambiado de flex-start a center */
+    border-bottom: 1px solid #333;
+    min-width: 220px;
+    width: 100%;
     box-sizing: border-box;
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+    transition: background 0.2s, transform 0.2s;
+    gap: 12px;
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
+.conteiner_list_clients ul li:last-child {
+    border-bottom: none;
+}
+
+.conteiner_list_clients ul li:hover {
+    background: #fec40822;
+    transform: translateY(-2px) scale(1.01);
+    cursor: pointer;
 }
