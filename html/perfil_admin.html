@@ -40,14 +40,13 @@
             </div>
         </div>
         <p class="address">calle 52#35-15, Caño2</p>
+        <div class="conteiner_bt_modi">
+            <button id="bt_modi">Modificar</button>
+        </div>
+        
         <div class="conteiner_clients">
             <h3>Clientes: <span>5</span></h3>
-            <div class="buttons">
-                <button id="bt_limit">Limitar</button>
-                <button id="bt_turn">Siguiente</button>
-                
-            </div>
-            
+            <button id="bt_turn">Siguiente</button>
         </div>
         
         <div class="conteiner_list_clients">
@@ -65,8 +64,20 @@
 
         <dialog id="miDialogo">
             <div class="conteiner_main">
-                <p>¡Toma tu turno !</p>
+                <p>Modifica tu informacion</p>
+
+                <label for="name">Nombre</label>
                 <input type="text" id="name" placeholder="Tu nombre">
+
+                <label for="price">precio</label>
+                <input type="number" placeholder="Tu precio" id="price">
+
+                <label for="">Barrio</label>
+                <input type="text" id="barrio" placeholder="Tu barrio">
+
+                <label for="">Direccion</label>
+                <input type="text" id="direccion" placeholder="Tu direccion">
+
                 <button id="close">Listo</button>
             </div>
 
@@ -75,6 +86,6 @@
 
     </main>
     
-    <script src="../js/perfil.js"></script>
+    <script src="../js/perfil_admin.js"></script>
 </body>
 </html>

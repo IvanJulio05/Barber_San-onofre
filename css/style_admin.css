@@ -236,6 +236,10 @@ main{
     flex-direction: column;
     align-items: center;
 }
+.conteiner_main label, button{
+    margin-top: 5px;
+}
+
 
 .conteiner_main input{
     font-size: 16px;
@@ -255,12 +259,17 @@ main{
     align-self: flex-end;
     
 }
+.conteiner_bt_modi{
+    display: flex;
+    justify-content: center;
 
-.buttons{
-    display: flex;    
-    padding: 2px;
 }
-.buttons #bt_limit{
-  margin-right: 10px;
-  background-color: #fe0808;
+.conteiner_bt_modi button{
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(121, 121, 255);
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
 }
