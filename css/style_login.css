@@ -16,7 +16,10 @@ body{
 }
 
 .conteiner_logo{    
-    width: 300px;
+    width: 200px;
+    padding: 50px;
+    padding-bottom: 0px;
+    
 }
 
 .conteiner_general img{
