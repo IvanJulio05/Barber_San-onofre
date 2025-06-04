@@ -41,6 +41,7 @@ main{
     height: auto; /* Permite que la altura se ajuste automáticamente */
     display: flex;
     flex-direction: row;
+    cursor: pointer;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box; /* Incluye el padding en el ancho total */

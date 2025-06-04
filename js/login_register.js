@@ -4,6 +4,15 @@ const conteinerInput = document.querySelector(".conteiner_inputs");
 
 const button = document.querySelector("#login");
 
+document.addEventListener("DOMContentLoaded",function(){
+
+    let token = localStorage.getItem("token");
+    
+    if(token != null){
+        window.location.replace('../html/perfil_admin.html');
+    }
+})
+
 createAccountButton.addEventListener("click", () => {
   console.log("click");
     if(button.textContent == "Iniciar Sesion"){
@@ -113,17 +122,22 @@ btLogin.addEventListener("click",()=>{
             })
             .then(response => {
 
-                if (!response.ok) {
-                    throw new Error('Network response was not ok ' + response.statusText);
-                }
-
-                let token = response.headers.get("Authorization");
-                localStorage.setItem("token",token);
-
                 if(response.status == 409){
                     alert("El correo ya esta registrado");
                 }
+                else if (!response.ok) {
+                    alert("Ocurrio un error, lo sentimos :(")
+                    throw new Error('Network response was not ok ' + response.statusText);
+                } 
+                else{
+                    let token = response.headers.get("Authorization");
+                    localStorage.setItem("token",token);                    
+                }
 
+
+
+
+               
 
                 return response.json(); // Parsear la respuesta JSON
             })
